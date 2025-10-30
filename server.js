@@ -6,7 +6,6 @@ const auth = require('./routes/auth')
 const customer = require('./routes/customer'); 
 const loan = require('./routes/agent');
 const admin = require('./routes/admin');
-const media = require('./controller/media');
 const cors = require('cors')
 const appAuth = require('./routes/appAuth');
 
@@ -22,7 +21,6 @@ app.use('/api/auth',auth)//for desktop
 app.use('/api/customer',customer)
 app.use('/api/agent',loan),
 app.use('/api/admin',admin)
-app.use('/api/media',media)
 app.use('/api/auth2',appAuth)//for app...
 
 
